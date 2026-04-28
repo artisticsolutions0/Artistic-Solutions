@@ -1,47 +1,138 @@
-/* MOBILE + TABLET FIX */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #111827;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  color: #cbd5e1;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #334155;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  margin-top: 40px;
+  color: #94a3b8;
+}
+
+/* MOBILE FIX */
 @media (max-width: 768px) {
 
   header {
     flex-direction: column;
-    padding: 15px 20px;
-    gap: 15px;
+    gap: 10px;
   }
 
   nav {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-  }
-
-  nav a {
-    margin-left: 0;
-    font-size: 14px;
-  }
-
-  .logo img {
-    height: 55px;
-  }
-
-  .hero {
-    height: auto;
-    padding: 80px 20px;
   }
 
   .hero h1 {
     font-size: 32px;
-    line-height: 1.2;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .section {
-    padding: 40px 20px;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
   }
 }
