@@ -10,8 +10,8 @@ body {
   color: white;
 }
 
-/* HEADER */
-header {
+/* NAV */
+header, nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,13 +26,10 @@ header {
   height: 60px;
 }
 
-nav {
-  display: flex;
-  gap: 20px;
-}
-
+/* LINKS */
 nav a {
   color: white;
+  margin-left: 15px;
   text-decoration: none;
 }
 
@@ -56,6 +53,7 @@ nav a:hover {
   color: #cbd5e1;
 }
 
+/* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -72,7 +70,7 @@ nav a:hover {
   padding: 70px 20px;
 }
 
-/* CARDS */
+/* GRID SYSTEM (USED BY BOTH PAGES) */
 .cards, .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -80,15 +78,16 @@ nav a:hover {
   margin-top: 30px;
 }
 
+/* CARD */
 .card {
   background: #1e293b;
   padding: 20px;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  transition: 0.3s;
 }
 
 /* IMAGE BOX */
@@ -112,5 +111,4 @@ footer {
   text-align: center;
   padding: 20px;
   background: #111827;
-  margin-top: 40px;
 }
