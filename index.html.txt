@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bilal Graphics</title>
+<title>Artistic Solutions</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body{font-family:Arial;text-align:center;padding:40px;background:#f5f5f5;}
