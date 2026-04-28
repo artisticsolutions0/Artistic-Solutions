@@ -22,9 +22,16 @@ header {
   z-index: 1000;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .logo img {
-  height: 50px;
+  height: 65px;
   width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 nav a {
