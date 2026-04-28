@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bilal Graphics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{font-family:Arial;text-align:center;padding:40px;background:#f5f5f5;}
+.box{max-width:700px;margin:auto;background:white;padding:30px;border-radius:12px;}
+h1{color:#222;}
+.btn{display:inline-block;padding:12px 20px;background:#25D366;color:white;text-decoration:none;border-radius:8px;}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Artistic Solutions</h1>
+<p>Professional Graphic Design Services</p>
+<p>Logos | Social Media Posts | Ads | Branding</p>
+<a class="btn" href="https://wa.me/923410298460">Contact on WhatsApp</a>
+</div>
+</body>
+</html>
