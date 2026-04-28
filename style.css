@@ -8,18 +8,14 @@
 body {
   background: #0f172a;
   color: white;
-  line-height: 1.6;
 }
 
 /* HEADER */
 header {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 15px 30px;
   background: #111827;
   position: sticky;
   top: 0;
@@ -28,8 +24,6 @@ header {
 
 .logo img {
   height: 60px;
-  width: auto;
-  display: block;
 }
 
 nav {
@@ -40,7 +34,6 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 nav a:hover {
@@ -49,52 +42,41 @@ nav a:hover {
 
 /* HERO */
 .hero {
-  height: 90vh;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 100px 20px;
   background: linear-gradient(to right, #0f172a, #1e293b);
 }
 
 .hero h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
+  font-size: 42px;
 }
 
 .hero p {
-  font-size: 18px;
-  max-width: 600px;
+  margin-top: 10px;
   color: #cbd5e1;
 }
 
 .btn {
+  display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
   background: #38bdf8;
   color: black;
-  font-weight: bold;
   border-radius: 8px;
   text-decoration: none;
 }
 
 /* SECTIONS */
 .section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 80px 20px;
   text-align: center;
+  padding: 70px 20px;
 }
 
 /* CARDS */
-.cards {
+.cards, .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
+  gap: 20px;
   margin-top: 30px;
 }
 
@@ -102,12 +84,27 @@ nav a:hover {
   background: #1e293b;
   padding: 20px;
   border-radius: 10px;
-  transition: 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+/* IMAGE BOX */
+.img-box {
+  height: 180px;
   background: #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 80px 20px;
 }
 
 /* FOOTER */
@@ -116,156 +113,4 @@ footer {
   padding: 20px;
   background: #111827;
   margin-top: 40px;
-  color: #94a3b8;
 }
-
-/* MOBILE FIX */
-@media (max-width: 768px) {
-
-  header {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hero h1 {
-    font-size: 32px;
-  }
-}
-
-
- <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, sans-serif;
-    }
-
-    body{
-      background:#0b1220;
-      color:#fff;
-    }
-
-    /* NAV */
-    nav{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:20px 50px;
-      position:sticky;
-      top:0;
-      background:#0f172a;
-      border-bottom:1px solid #1f2937;
-    }
-
-    nav h2{
-      color:#38bdf8;
-      font-size:20px;
-    }
-
-    nav a{
-      color:#fff;
-      text-decoration:none;
-      margin-left:20px;
-    }
-
-    nav a:hover{
-      color:#38bdf8;
-    }
-
-    /* HERO */
-    .hero{
-      padding:100px 20px;
-      text-align:center;
-      background:linear-gradient(135deg,#0f172a,#111827,#0b1220);
-    }
-
-    .hero h1{
-      font-size:48px;
-      max-width:900px;
-      margin:auto;
-    }
-
-    .hero p{
-      margin-top:15px;
-      color:#cbd5e1;
-      max-width:600px;
-      margin-left:auto;
-      margin-right:auto;
-    }
-
-    .btn{
-      display:inline-block;
-      margin-top:25px;
-      padding:12px 25px;
-      background:#38bdf8;
-      color:#000;
-      font-weight:bold;
-      border-radius:8px;
-      text-decoration:none;
-    }
-
-    /* SECTION */
-    .section{
-      padding:70px 20px;
-      text-align:center;
-    }
-
-    .section h2{
-      color:#38bdf8;
-      margin-bottom:20px;
-    }
-
-    /* GRID */
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:20px;
-      max-width:1000px;
-      margin:auto;
-      margin-top:30px;
-    }
-
-    .card{
-      background:#111827;
-      padding:20px;
-      border-radius:12px;
-      border:1px solid #1f2937;
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-8px);
-      border-color:#38bdf8;
-    }
-
-    .img-box{
-      height:180px;
-      background:#1f2937;
-      border-radius:10px;
-      margin-bottom:15px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#94a3b8;
-    }
-
-    /* CTA */
-    .cta{
-      text-align:center;
-      padding:80px 20px;
-      background:#0f172a;
-      border-top:1px solid #1f2937;
-    }
-
-    footer{
-      text-align:center;
-      padding:20px;
-      color:#94a3b8;
-    }
-  </style>
